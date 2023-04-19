@@ -4,11 +4,11 @@
 int main() {
     Engine engine;
 
-    engine.Setup();
+    engine.Initialize();
 
     // Game Loop
-    while (engine.IsRunning()) {
-        engine.Input();
+    while (engine.HasStarted()) {
+        engine.HandleUserInput();
         engine.Update();
         engine.Render();
     }

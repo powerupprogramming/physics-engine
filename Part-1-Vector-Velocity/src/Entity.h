@@ -1,5 +1,5 @@
 #pragma once
-#include "Vec2D.h"
+#include "../src/Physics/Vec2D.h"
 
 struct Entity {
 	Vec2D position;

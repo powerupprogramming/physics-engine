@@ -3,8 +3,8 @@
 
 #include <iostream>
 #include "Entity.h"
-#include "Vec2D.h"
-#include "./GraphicInterface.h"
+#include "../src/Physics/Vec2D.h"
+#include "../src/GraphicInterface/GraphicInterface.h"
 
 class Engine
 {

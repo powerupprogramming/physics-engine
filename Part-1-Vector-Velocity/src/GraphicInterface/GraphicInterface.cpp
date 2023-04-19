@@ -1,4 +1,4 @@
-#include "GraphicInterface.h"
+#include "./GraphicInterface.h"
 
 SDL_Window *GraphicInterface::window = NULL;
 SDL_Renderer *GraphicInterface::renderer = NULL;
@@ -95,8 +95,8 @@ void GraphicInterface::DrawPolygon(int x, int y, const std::vector<Vec2D> &verti
 
 void GraphicInterface::DrawFillPolygon(int x, int y, const std::vector<Vec2D> &vertices, Uint32 color)
 {
-    std::vector<int> verticesX;
-    std::vector<int> verticesY;
+    std::vector<short> verticesX;
+    std::vector<short> verticesY;
     for (int i = 0; i < vertices.size(); i++)
     {
         verticesX.push_back(static_cast<int>(vertices[i].x));

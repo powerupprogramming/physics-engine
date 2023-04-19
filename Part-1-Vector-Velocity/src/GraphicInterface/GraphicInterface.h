@@ -2,9 +2,10 @@
 #define GRAPHICINTERFACE_H
 
 #include <SDL.h>
-#include "SDL2_gfxPrimitives.h"
-#include "Vec2D.h"
+#include "../../lib/SDL2_gfx/SDL2_gfxPrimitives.h"
+#include "../Physics/Vec2D.h"
 #include <vector>
+#include <iostream>
 
 struct GraphicInterface
 {
@@ -13,8 +14,8 @@ struct GraphicInterface
     static SDL_Window *window;
     static SDL_Renderer *renderer;
 
-    static int Width();
-    static int Height();
+    static int GetWidth();
+    static int GetHeight();
     static bool OpenWindow();
     static void CloseWindow();
     static void WipeScreen(Uint32 color);

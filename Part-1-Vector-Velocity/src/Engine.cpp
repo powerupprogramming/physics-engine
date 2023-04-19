@@ -68,14 +68,14 @@ void Engine::Update()
 {
 
     // start with x axis
-    if (entity->position.x - 10 < 0 || entity->position.x + 10 >= GraphicInterface::Width())
+    if (entity->position.x - 10 < 0 || entity->position.x + 10 >= GraphicInterface::GetWidth())
     {
         // reverse x velocity
         velocities = Vec2D(velocities.x * -1, velocities.y);
     }
 
     // y axis
-    if (entity->position.y - 10 < 0 || entity->position.y + 10 >= GraphicInterface::Height())
+    if (entity->position.y - 10 < 0 || entity->position.y + 10 >= GraphicInterface::GetHeight())
     {
         // reverse y velocity
         velocities = Vec2D(velocities.x, velocities.y * -1);
